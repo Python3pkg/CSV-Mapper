@@ -17,7 +17,7 @@ class JSONMapTest(unittest.TestCase):
 	def test_type(self):
 		if self.obj != None:
 			aType = type(self.obj[0].Age)
-			self.assertEqual(aType, type(0))
+			self.assertEqual(aType, str)
 
 if __name__ == '__main__':
 	unittest.main()

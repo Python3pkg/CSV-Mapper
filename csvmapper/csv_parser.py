@@ -90,7 +90,7 @@ class CSVWriter():
 	# write to csv file
 	def write(self, fileName):
 		isDict = type(self.dic[0]) == dict
-		with open(fileName, 'wb') as fs:
+		with open(fileName, 'w') as fs:
 			headings = None
 			if isDict:
 				headings = list(self.dic[0].keys())
