@@ -1,6 +1,6 @@
 import csv
-from . import mapper
-from . import utils
+import mapper
+import utils
 
 class CSVParser(object):
 	"""CSV Parser capable of parsing against a pre-defined mapper file"""
@@ -93,7 +93,7 @@ class CSVWriter():
 		with open(fileName, 'wb') as fs:
 			headings = None
 			if isDict:
-				headings = list(self.dic[0].keys())
+				headings = self.dic[0].keys()
 			else:
 				headings = self.dic[0].attribs()
 

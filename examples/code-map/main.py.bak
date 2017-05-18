@@ -21,7 +21,7 @@ for i in range(0, len(objs)):
 	obj = objs[i]
 	if i % 2 == 0:
 		area = obj.length * obj.breadth
-		print('A rectangle with length %dcm and breadth %dcm has area %dcm' %(obj.length, obj.breadth, area))
+		print 'A rectangle with length %dcm and breadth %dcm has area %dcm' %(obj.length, obj.breadth, area)
 	else:
 		circumf = 2 * obj.radius * math.pi
-		print('A circle with radius %dcm has circumference %dcm' %(obj.radius, circumf))
+		print 'A circle with radius %dcm has circumference %dcm' %(obj.radius, circumf)

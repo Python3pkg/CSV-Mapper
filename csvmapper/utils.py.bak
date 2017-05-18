@@ -7,4 +7,4 @@ class CSVObject(object):
 		return self.d[x]
 
 	def attribs(self):
-		return list(self.d.keys())
+		return self.d.keys()

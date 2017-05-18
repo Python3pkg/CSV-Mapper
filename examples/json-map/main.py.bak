@@ -8,4 +8,4 @@ parser = csvmapper.CSVParser('patients.csv', mapper)
 patients = parser.buildObject()
 
 for patient in patients:
-	print('( %g ) %s is %d years old, and is suffering from %s' %(patient.ID, patient.Name, patient.Age, patient.Disease))
+	print '( %g ) %s is %d years old, and is suffering from %s' %(patient.ID, patient.Name, patient.Age, patient.Disease)
